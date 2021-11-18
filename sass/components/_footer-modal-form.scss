@@ -1,0 +1,34 @@
+.footer__form-cont {
+  margin-left: auto;
+}
+
+.footer__form .footer__form-cont {
+  display: flex;
+}
+
+.footer__input {
+  margin-right: 12px;
+  padding: 15px 16px;
+  width: 358px;
+  height: 50px;
+  background-color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  color: var(--third-text-color);
+  outline: none;
+}
+
+.footer__form-cont .btn {
+  display: flex;
+  align-items: center;
+
+  padding-left: 29px;
+  padding-right: 28px;
+}
+
+.footer__form-cont .btn svg {
+  margin-left: 10px;
+}

@@ -1,0 +1,19 @@
+.active-link.header__menu-link {
+  position: relative;
+  color: var(--accent-color);
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+  }
+}
+
+
