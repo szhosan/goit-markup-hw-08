@@ -9,7 +9,10 @@
 
 .team__itemcont {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
+  @media screen and (min-width: $desktop) {
+    padding-bottom: 30px;
+  }
 }
 
 .team__position {
@@ -23,20 +26,51 @@
 }
 
 .team__section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: $desktop) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   background-color: var(--secondary-background-color);
 }
 
 .team__list {
-  display: flex;
-  flex-wrap: wrap;
   margin-left: -30px;
+  margin-bottom: -30px;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-left: -30px;
+  }
 }
 
+.team__photo{
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* .team__item:nth-child(even){
+  @media screen and (min-width: $tablet){
+    
+  }
+} */
+
 .team__item {
-  width: calc((100% - 30px * 4) / 4);
+  margin-bottom: 30px;
   margin-left: 30px;
+  width: calc(100% - 30px);
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 30px * 4) / 4);
+    margin-left: 30px;
+  }
 
   background-color: var(--third-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),

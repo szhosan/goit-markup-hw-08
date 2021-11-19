@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
   </head>
   <body>
@@ -42,6 +43,70 @@
             </li>
           </ul>
         </nav>
+        <button class="header__mobile-menu-but" mobile-menu-open>
+          <svg class="header__mobile-menu-icon" width="40px" height="40px" >
+            <use href="./images/sprite.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+
+        <!-- mobile menu -->
+
+        <div class="mobile-menu" mobile-menu>
+          <button class="close-mobile-btn" mobile-menu-close>
+            <svg class="close-mobile-icon" width="40px" height="40px">
+              <use href="./images/sprite.svg#icon-close_menu"></use>
+            </svg>
+          </button>
+
+          <ul class="list">
+            <li class="header__nav-item">
+              <a class="link header__menu-link active-link" href="./index.html"
+                >Студия</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="link header__menu-link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="link header__menu-link" href="">Контакты</a>
+            </li>
+          </ul>
+
+          <div class="mobile-menu-cont">
+            <ul class="mobile-menu-list list">
+              <li class="mobile__cont-item">
+                <a class="link mobile__cont-link" href="tel:+380961111111">
+                  +38&nbsp;096&nbsp;111&nbsp;11&nbsp;11
+                </a>
+              </li>
+              <li class="mobile__cont-item">
+                <a class="link mobile__cont-link" href="mailto:info@devstudio.com">                  
+                  info@devstudio.com
+                </a>
+              </li>
+            </ul>
+
+            <ul class="mobile__social-list list">
+              <li class="mobile__social-item">
+                <a href="#" class="mobile__social-link link">Instagram</a>
+              </li>
+              <li class="mobile__social-item">
+                <a href="#" class="mobile__social-link link">Twitter</a>
+              </li>
+              <li class="mobile__social-item">
+                <a href="#" class="mobile__social-link link">Facebook</a>
+              </li>
+              <li class="mobile__social-item">
+                <a href="#" class="mobile__social-link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+          
+
+        <!-- end mobile-menu -->
+
+
         <ul class="list header__cont-list">
           <li class="header__cont-item">
             <a class="link header__cont-link" href="mailto:info@devstudio.com">
@@ -136,39 +201,127 @@
           <h2 class="secondary-title">Чем мы занимаемся</h2>
           <ul class="list our-works__list">
             <li class="our-works__item">
-              <img src="./images/example1.jpg" alt="Фото сайта" width="370" />
+              <picture>
+                <source
+                    srcset="
+                      ./images/example/ex-1-desktop.webp    1x,
+                      ./images/example/ex-1-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                    ./images/example/ex-1-desktop.jpg    1x,
+                    ./images/example/ex-1-desktop@2x.jpg 2x
+                    "
+                  />
+                <img src="#" alt="Фото сайта" width="370" />
+              </picture>
+              
               <h3 class="our-works__subtitle">Десктопные приложения</h3>
             </li>
+
             <li class="our-works__item">
-              <img
-                src="./images/example2.jpg"
-                alt="Фото приложения"
-                width="370"
-              />
+              <picture>
+                <source
+                    srcset="
+                      ./images/example/ex-2-desktop.webp    1x,
+                      ./images/example/ex-2-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                    ./images/example/ex-2-desktop.jpg    1x,
+                    ./images/example/ex-2-desktop@2x.jpg 2x
+                    "
+                  />
+                <img src="#" alt="Фото сайта" width="370" />
+              </picture>
+              
               <h3 class="our-works__subtitle">Мобильные приложения</h3>
             </li>
+
             <li class="our-works__item">
-              <img
-                src="./images/example3.jpg"
-                alt="Фото приложения на планшете"
-                width="370"
-              />
+              <picture>
+                <source
+                    srcset="
+                      ./images/example/ex-3-desktop.webp    1x,
+                      ./images/example/ex-3-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                    ./images/example/ex-3-desktop.jpg    1x,
+                    ./images/example/ex-3-desktop@2x.jpg 2x
+                    "
+                  />
+                <img src="#" alt="Фото сайта" width="370" />
+              </picture>
+              
               <h3 class="our-works__subtitle">Дизайнерские решения</h3>
             </li>
+            
           </ul>
         </div>
       </section>
 
       <section class="team__section">
-        <div class="container">
+        <div class="container team__container">
           <h2 class="secondary-title">Наша команда</h2>
           <ul class="list team__list">
             <li class="team__item">
-              <img
-                src="./images/team-mate-1.jpg"
-                alt="Фото сотрудника компании"
-                width="270"
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-1-desktop.webp 1x,
+                    ./images/team/team-1-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+               />
+               <source
+                 media="(min-width: 1200px)"
+                 srcset="
+                   ./images/team/team-1-desktop.jpg 1x,
+                   ./images/team/team-1-desktop@2x.jpg 2x
+                 "
+               />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/team/team-1-tablet.webp 1x,
+                  ./images/team/team-1-tablet@2x.webp 2x
+                "
+                type="image/webp"
               />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/team/team-1-tablet.jpg 1x,
+                  ./images/team/team-1-tablet@2x.jpg 2x
+                "
+              />
+              <source
+                srcset="
+                  ./images/team/team-1.webp 1x,
+                  ./images/team/team-1@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team/team-1.jpg 1x,
+                  ./images/team/team-1@2x.jpg 2x
+                "
+              />
+                <img class="team__photo"
+                src="#"
+                alt="Фото сотрудника компании"
+              />
+              </picture>
+              
               <div class="team__itemcont">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__position">Product Designer</p>
@@ -221,11 +374,55 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team-mate-2.jpg"
-                alt="Фото сотрудника компании"
-                width="270"
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-2-desktop.webp 1x,
+                    ./images/team/team-2-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+               />
+               <source
+                 media="(min-width: 1200px)"
+                 srcset="
+                   ./images/team/team-2-desktop.jpg 1x,
+                   ./images/team/team-2-desktop@2x.jpg 2x
+                 "
+               />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/team/team-2-tablet.webp 1x,
+                  ./images/team/team-2-tablet@2x.webp 2x
+                "
+                type="image/webp"
               />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/team/team-2-tablet.jpg 1x,
+                  ./images/team/team-2-tablet@2x.jpg 2x
+                "
+              />
+              <source
+                srcset="
+                  ./images/team/team-2.webp 1x,
+                  ./images/team/team-2@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team/team-2.jpg 1x,
+                  ./images/team/team-2@2x.jpg 2x
+                "
+              />
+                <img class="team__photo"
+                src="#"
+                alt="Фото сотрудника компании"
+              />
+              </picture>
               <div class="team__itemcont">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__position">Frontend Developer</p>
@@ -278,11 +475,55 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team-mate-3.jpg"
-                alt="Фото сотрудника компании"
-                width="270"
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-3-desktop.webp 1x,
+                    ./images/team/team-3-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+               />
+               <source
+                 media="(min-width: 1200px)"
+                 srcset="
+                   ./images/team/team-3-desktop.jpg 1x,
+                   ./images/team/team-3-desktop@2x.jpg 2x
+                 "
+               />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/team/team-3-tablet.webp 1x,
+                  ./images/team/team-3-tablet@2x.webp 2x
+                "
+                type="image/webp"
               />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/team/team-3-tablet.jpg 1x,
+                  ./images/team/team-3-tablet@2x.jpg 2x
+                "
+              />
+              <source
+                srcset="
+                  ./images/team/team-3.webp 1x,
+                  ./images/team/team-3@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team/team-3.jpg 1x,
+                  ./images/team/team-3@2x.jpg 2x
+                "
+              />
+                <img class="team__photo"
+                src="#"
+                alt="Фото сотрудника компании"
+              />
+              </picture>
               <div class="team__itemcont">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__position">Marketing</p>
@@ -335,11 +576,55 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                src="./images/team-mate-4.jpg"
-                alt="Фото сотрудника компании"
-                width="270"
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team/team-4-desktop.webp 1x,
+                    ./images/team/team-4-desktop@2x.webp 2x
+                  "
+                  type="image/webp"
+               />
+               <source
+                 media="(min-width: 1200px)"
+                 srcset="
+                   ./images/team/team-4-desktop.jpg 1x,
+                   ./images/team/team-4-desktop@2x.jpg 2x
+                 "
+               />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/team/team-4-tablet.webp 1x,
+                  ./images/team/team-4-tablet@2x.webp 2x
+                "
+                type="image/webp"
               />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/team/team-4-tablet.jpg 1x,
+                  ./images/team/team-4-tablet@2x.jpg 2x
+                "
+              />
+              <source
+                srcset="
+                  ./images/team/team-4.webp 1x,
+                  ./images/team/team-4@2x.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/team/team-4.jpg 1x,
+                  ./images/team/team-4@2x.jpg 2x
+                "
+              />
+                <img class="team__photo"
+                src="#"
+                alt="Фото сотрудника компании"
+              />
+              </picture>
               <div class="team__itemcont">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__position">UI Designer</p>
@@ -597,5 +882,6 @@
 
     <!--/backdrop-->
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

@@ -18,6 +18,10 @@
 }
 
 .our-works__section {
+  display: none;
+  @media screen and (min-width: $desktop) {
+    display: block;
+  }
   padding-bottom: 94px;
 }
 
