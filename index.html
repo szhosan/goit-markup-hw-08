@@ -43,7 +43,7 @@
             </li>
           </ul>
         </nav>
-        <button class="header__mobile-menu-but" mobile-menu-open>
+        <button class="header__mobile-menu-but" aria-label="Меню" mobile-menu-open>
           <svg class="header__mobile-menu-icon" width="40px" height="40px" >
             <use href="./images/sprite.svg#icon-mobile-menu"></use>
           </svg>
@@ -52,7 +52,7 @@
         <!-- mobile menu -->
 
         <div class="mobile-menu" mobile-menu>
-          <button class="close-mobile-btn" mobile-menu-close>
+          <button class="close-mobile-btn" aria-label="Закрыть меню" mobile-menu-close>
             <svg class="close-mobile-icon" width="40px" height="40px">
               <use href="./images/sprite.svg#icon-close_menu"></use>
             </svg>
@@ -215,7 +215,7 @@
                     ./images/example/ex-1-desktop@2x.jpg 2x
                     "
                   />
-                <img src="#" alt="Фото сайта" width="370" />
+                <img src="#" alt="Фото сайта" loading="lazy" width="370" />
               </picture>
               
               <h3 class="our-works__subtitle">Десктопные приложения</h3>
@@ -236,7 +236,7 @@
                     ./images/example/ex-2-desktop@2x.jpg 2x
                     "
                   />
-                <img src="#" alt="Фото сайта" width="370" />
+                <img src="#" alt="Фото сайта" loading="lazy" width="370" />
               </picture>
               
               <h3 class="our-works__subtitle">Мобильные приложения</h3>
@@ -257,7 +257,7 @@
                     ./images/example/ex-3-desktop@2x.jpg 2x
                     "
                   />
-                <img src="#" alt="Фото сайта" width="370" />
+                <img src="#" alt="Фото сайта" loading="lazy" width="370" />
               </picture>
               
               <h3 class="our-works__subtitle">Дизайнерские решения</h3>
@@ -319,6 +319,8 @@
                 <img class="team__photo"
                 src="#"
                 alt="Фото сотрудника компании"
+                width="270"
+                loading="lazy"
               />
               </picture>
               
@@ -421,6 +423,8 @@
                 <img class="team__photo"
                 src="#"
                 alt="Фото сотрудника компании"
+                width="270"
+                loading="lazy"
               />
               </picture>
               <div class="team__itemcont">
@@ -522,6 +526,8 @@
                 <img class="team__photo"
                 src="#"
                 alt="Фото сотрудника компании"
+                width="270"
+                loading="lazy"
               />
               </picture>
               <div class="team__itemcont">
@@ -623,6 +629,8 @@
                 <img class="team__photo"
                 src="#"
                 alt="Фото сотрудника компании"
+                width="270"
+                loading="lazy"
               />
               </picture>
               <div class="team__itemcont">
@@ -815,7 +823,7 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="close-modal-btn" data-modal-close>
+        <button class="close-modal-btn" aria-label="Закрыть окно" data-modal-close>
           <svg class="close-icon" width="18px" height="18px">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>

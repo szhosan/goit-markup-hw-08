@@ -44,7 +44,11 @@
             </li>
           </ul>
         </nav>
-        <button class="header__mobile-menu-but" mobile-menu-open>
+        <button
+          class="header__mobile-menu-but"
+          aria-label="Меню"
+          mobile-menu-open
+        >
           <svg class="header__mobile-menu-icon" width="40px" height="40px">
             <use href="./images/sprite.svg#icon-mobile-menu"></use>
           </svg>
@@ -53,7 +57,11 @@
         <!-- mobile menu -->
 
         <div class="mobile-menu" mobile-menu>
-          <button class="close-mobile-btn" mobile-menu-close>
+          <button
+            class="close-mobile-btn"
+            aria-label="Закрыть меню"
+            mobile-menu-close
+          >
             <svg class="close-mobile-icon" width="40px" height="40px">
               <use href="./images/sprite.svg#icon-close_menu"></use>
             </svg>
@@ -202,10 +210,12 @@
                         ./images/works/works-1@2x.jpg 2x
                       "
                     />
-                    <img class="pft__photo"
+                    <img
+                      class="pft__photo"
                       src="#"
                       alt="Фото веб-сайта"
                       width="370"
+                      loading="lazy"
                     />
                   </picture>
 
@@ -272,10 +282,12 @@
                         ./images/works/works-2@2x.jpg 2x
                       "
                     />
-                    <img class="pft__photo"
+                    <img
+                      class="pft__photo"
                       src="#"
                       alt="Фото постера"
                       width="370"
+                      loading="lazy"
                     />
                   </picture>
                   <div class="ptf__descr-cont">
@@ -340,10 +352,12 @@
                         ./images/works/works-3@2x.jpg 2x
                       "
                     />
-                    <img class="pft__photo"
+                    <img
+                      class="pft__photo"
                       src="#"
                       alt="Логотип ресторана"
                       width="370"
+                      loading="lazy"
                     />
                   </picture>
                   <div class="ptf__descr-cont">
@@ -408,10 +422,12 @@
                         ./images/works/works-4@2x.jpg 2x
                       "
                     />
-                    <img class="pft__photo"
+                    <img
+                      class="pft__photo"
                       src="#"
                       alt="Фото с наушниками"
                       width="370"
+                      loading="lazy"
                     />
                   </picture>
                   <div class="ptf__descr-cont">
@@ -432,56 +448,58 @@
             <li class="ptf__item">
               <a class="link portfolio__link" href="">
                 <div class="ptf__img-cont">
-                <picture>
-                  <source
-                    media="(min-width: 1200px)"
-                    srcset="
-                      ./images/works/works-5-desktop.webp    1x,
-                      ./images/works/works-5-desktop@2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    media="(min-width: 1200px)"
-                    srcset="
-                      ./images/works/works-5-desktop.jpg    1x,
-                      ./images/works/works-5-desktop@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./images/works/works-5-tablet.webp    1x,
-                      ./images/works/works-5-tablet@2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./images/works/works-5-tablet.jpg    1x,
-                      ./images/works/works-5-tablet@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    srcset="
-                      ./images/works/works-5.webp    1x,
-                      ./images/works/works-5@2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./images/works/works-5.jpg    1x,
-                      ./images/works/works-5@2x.jpg 2x
-                    "
-                  />
-                  <img class="pft__photo"
-                    src="#"
-                    alt="Фото с коробками"
-                    width="370"
-                  />
-                </picture>
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/works-5-desktop.webp    1x,
+                        ./images/works/works-5-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/works-5-desktop.jpg    1x,
+                        ./images/works/works-5-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/works-5-tablet.webp    1x,
+                        ./images/works/works-5-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/works-5-tablet.jpg    1x,
+                        ./images/works/works-5-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-5.webp    1x,
+                        ./images/works/works-5@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-5.jpg    1x,
+                        ./images/works/works-5@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="pft__photo"
+                      src="#"
+                      alt="Фото с коробками"
+                      width="370"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="ptf__descr-cont">
                     <p class="ptf__descr">
                       Технокряк это современная площадка распространения
@@ -544,10 +562,12 @@
                         ./images/works/works-6@2x.jpg 2x
                       "
                     />
-                    <img class="pft__photo"
+                    <img
+                      class="pft__photo"
                       src="#"
                       alt="Фото веб-сайта"
                       width="370"
+                      loading="lazy"
                     />
                   </picture>
                   <div class="ptf__descr-cont">
@@ -612,10 +632,12 @@
                         ./images/works/works-7@2x.jpg 2x
                       "
                     />
-                    <img class="pft__photo"
+                    <img
+                      class="pft__photo"
                       src="#"
                       alt="Фото журнала"
                       width="370"
+                      loading="lazy"
                     />
                   </picture>
                   <div class="ptf__descr-cont">
@@ -636,56 +658,58 @@
             <li class="ptf__item">
               <a class="link portfolio__link" href="">
                 <div class="ptf__img-cont">
-                <picture>
-                  <source
-                    media="(min-width: 1200px)"
-                    srcset="
-                      ./images/works/works-8-desktop.webp    1x,
-                      ./images/works/works-8-desktop@2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    media="(min-width: 1200px)"
-                    srcset="
-                      ./images/works/works-8-desktop.jpg    1x,
-                      ./images/works/works-8-desktop@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./images/works/works-8-tablet.webp    1x,
-                      ./images/works/works-8-tablet@2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    media="(min-width: 768px)"
-                    srcset="
-                      ./images/works/works-8-tablet.jpg    1x,
-                      ./images/works/works-8-tablet@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    srcset="
-                      ./images/works/works-8.webp    1x,
-                      ./images/works/works-8@2x.webp 2x
-                    "
-                    type="image/webp"
-                  />
-                  <source
-                    srcset="
-                      ./images/works/works-8.jpg    1x,
-                      ./images/works/works-8@2x.jpg 2x
-                    "
-                  />
-                  <img class="pft__photo"
-                    src="#"
-                    alt="Фото с логотипом"
-                    width="370"
-                  />
-                </picture>
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/works-8-desktop.webp    1x,
+                        ./images/works/works-8-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/works-8-desktop.jpg    1x,
+                        ./images/works/works-8-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/works-8-tablet.webp    1x,
+                        ./images/works/works-8-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/works-8-tablet.jpg    1x,
+                        ./images/works/works-8-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-8.webp    1x,
+                        ./images/works/works-8@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-8.jpg    1x,
+                        ./images/works/works-8@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      class="pft__photo"
+                      src="#"
+                      alt="Фото с логотипом"
+                      width="370"
+                      loading="lazy"
+                    />
+                  </picture>
                   <div class="ptf__descr-cont">
                     <p class="ptf__descr">
                       Технокряк это современная площадка распространения
@@ -748,10 +772,12 @@
                         ./images/works/works-9@2x.jpg 2x
                       "
                     />
-                    <img class="pft__photo"
+                    <img
+                      class="pft__photo"
                       src="#"
                       alt="Фото с приложением на PC"
                       width="370"
+                      loading="lazy"
                     />
                   </picture>
                   <div class="ptf__descr-cont">
