@@ -391,16 +391,23 @@ img {
   margin-right: auto;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 9px;
+  line-height: 1;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 400px) {
   .confirm-label {
     font-size: 12px;
     line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .confirm-label {
+    font-size: 14px;
+    line-height: 1.71;
   }
 }
 
@@ -531,6 +538,7 @@ img {
 .mobile-menu {
   position: fixed;
   z-index: 100;
+  overflow: auto;
   top: 0;
   left: 0;
   display: flex;
