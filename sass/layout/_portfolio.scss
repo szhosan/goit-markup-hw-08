@@ -1,31 +1,63 @@
 .filter-list {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: $tablet) {
+    justify-content: center;
+  }
+
+  margin-bottom: -15px;
 }
 
 .filter-list .filter-item:not(:last-child) {
   margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .potfolio_container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .ptf__list {
-  margin-top: 50px;
+  margin-top: 40px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 50px;
+  }
   margin-bottom: -30px;
-  display: flex;
-  flex-wrap: wrap;
+  margin-right: -30px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .ptf__list .ptf__item {
-  width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
+
+  width: calc(100% - 30px);
+  @media screen and (min-width: $tablet) {
+    width: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc((100% - 90px) / 3);
+  }
 }
-.ptf__list .ptf__item:nth-child(3n) {
-  margin-right: 0;
+
+.pft__photo {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .portfolio__link {
@@ -62,7 +94,13 @@
 }
 
 .ptf__descr {
-  font-size: 18px;
+  font-size: 13px;
+  @media screen and (min-width: 325px) {
+    font-size: 4vw;
+  }
+  @media screen and (min-width: $mobile) {
+    font-size: 18px;
+  }
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: var(--third-text-color);

@@ -30,12 +30,14 @@
           </a>
           <ul class="header__nav list">
             <li class="header__nav-item">
-              <a class="link header__menu-link" href="./index.html"
-                >Студия</a
-              >
+              <a class="link header__menu-link" href="./index.html">Студия</a>
             </li>
             <li class="header__nav-item">
-              <a class="link header__menu-link active-link" href="./portfolio.html">Портфолио</a>
+              <a
+                class="link header__menu-link active-link"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="header__nav-item">
               <a class="link header__menu-link" href="">Контакты</a>
@@ -43,7 +45,7 @@
           </ul>
         </nav>
         <button class="header__mobile-menu-but" mobile-menu-open>
-          <svg class="header__mobile-menu-icon" width="40px" height="40px" >
+          <svg class="header__mobile-menu-icon" width="40px" height="40px">
             <use href="./images/sprite.svg#icon-mobile-menu"></use>
           </svg>
         </button>
@@ -59,12 +61,14 @@
 
           <ul class="list">
             <li class="header__nav-item">
-              <a class="link header__menu-link" href="./index.html"
-                >Студия</a
-              >
+              <a class="link header__menu-link" href="./index.html">Студия</a>
             </li>
             <li class="header__nav-item">
-              <a class="link header__menu-link active-link" href="./portfolio.html">Портфолио</a>
+              <a
+                class="link header__menu-link active-link"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
             </li>
             <li class="header__nav-item">
               <a class="link header__menu-link" href="">Контакты</a>
@@ -79,7 +83,10 @@
                 </a>
               </li>
               <li class="mobile__cont-item">
-                <a class="link mobile__cont-link" href="mailto:info@devstudio.com">                  
+                <a
+                  class="link mobile__cont-link"
+                  href="mailto:info@devstudio.com"
+                >
                   info@devstudio.com
                 </a>
               </li>
@@ -101,10 +108,8 @@
             </ul>
           </div>
         </div>
-          
 
         <!-- end mobile-menu -->
-
 
         <ul class="list header__cont-list">
           <li class="header__cont-item">
@@ -153,11 +158,57 @@
             <li class="ptf__item">
               <a class="link portfolio__link" href="">
                 <div class="ptf__img-cont">
-                  <img
-                    src="./images/our-works-1.jpg"
-                    alt="Фото веб-сайта"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/works-1-desktop.webp    1x,
+                        ./images/works/works-1-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/works-1-desktop.jpg    1x,
+                        ./images/works/works-1-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/works-1-tablet.webp    1x,
+                        ./images/works/works-1-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/works-1-tablet.jpg    1x,
+                        ./images/works/works-1-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-1.webp    1x,
+                        ./images/works/works-1@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-1.jpg    1x,
+                        ./images/works/works-1@2x.jpg 2x
+                      "
+                    />
+                    <img class="pft__photo"
+                      src="#"
+                      alt="Фото веб-сайта"
+                      width="370"
+                    />
+                  </picture>
+
                   <div class="ptf__descr-cont">
                     <p class="ptf__descr">
                       Технокряк это современная площадка распространения
@@ -177,11 +228,56 @@
             <li class="ptf__item">
               <a class="link portfolio__link" href="">
                 <div class="ptf__img-cont">
-                  <img
-                    src="./images/our-works-2.jpg"
-                    alt="Фото постера"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/works-2-desktop.webp    1x,
+                        ./images/works/works-2-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/works-2-desktop.jpg    1x,
+                        ./images/works/works-2-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/works-2-tablet.webp    1x,
+                        ./images/works/works-2-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/works-2-tablet.jpg    1x,
+                        ./images/works/works-2-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-2.webp    1x,
+                        ./images/works/works-2@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-2.jpg    1x,
+                        ./images/works/works-2@2x.jpg 2x
+                      "
+                    />
+                    <img class="pft__photo"
+                      src="#"
+                      alt="Фото постера"
+                      width="370"
+                    />
+                  </picture>
                   <div class="ptf__descr-cont">
                     <p class="ptf__descr">
                       Технокряк это современная площадка распространения
@@ -200,11 +296,56 @@
             <li class="ptf__item">
               <a class="link portfolio__link" href="">
                 <div class="ptf__img-cont">
-                  <img
-                    src="./images/our-works-3.jpg"
-                    alt="Фото с логотипом ресторана"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/works-3-desktop.webp    1x,
+                        ./images/works/works-3-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/works-3-desktop.jpg    1x,
+                        ./images/works/works-3-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/works-3-tablet.webp    1x,
+                        ./images/works/works-3-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/works-3-tablet.jpg    1x,
+                        ./images/works/works-3-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-3.webp    1x,
+                        ./images/works/works-3@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-3.jpg    1x,
+                        ./images/works/works-3@2x.jpg 2x
+                      "
+                    />
+                    <img class="pft__photo"
+                      src="#"
+                      alt="Логотип ресторана"
+                      width="370"
+                    />
+                  </picture>
                   <div class="ptf__descr-cont">
                     <p class="ptf__descr">
                       Технокряк это современная площадка распространения
@@ -223,11 +364,56 @@
             <li class="ptf__item">
               <a class="link portfolio__link" href="">
                 <div class="ptf__img-cont">
-                  <img
-                    src="./images/our-works-4.jpg"
-                    alt="Фото с наушниками"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/works-4-desktop.webp    1x,
+                        ./images/works/works-4-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/works-4-desktop.jpg    1x,
+                        ./images/works/works-4-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/works-4-tablet.webp    1x,
+                        ./images/works/works-4-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/works-4-tablet.jpg    1x,
+                        ./images/works/works-4-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-4.webp    1x,
+                        ./images/works/works-4@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-4.jpg    1x,
+                        ./images/works/works-4@2x.jpg 2x
+                      "
+                    />
+                    <img class="pft__photo"
+                      src="#"
+                      alt="Фото с наушниками"
+                      width="370"
+                    />
+                  </picture>
                   <div class="ptf__descr-cont">
                     <p class="ptf__descr">
                       Технокряк это современная площадка распространения
@@ -246,11 +432,56 @@
             <li class="ptf__item">
               <a class="link portfolio__link" href="">
                 <div class="ptf__img-cont">
-                  <img
-                    src="./images/our-works-5.jpg"
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/works/works-5-desktop.webp    1x,
+                      ./images/works/works-5-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/works/works-5-desktop.jpg    1x,
+                      ./images/works/works-5-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/works/works-5-tablet.webp    1x,
+                      ./images/works/works-5-tablet@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/works/works-5-tablet.jpg    1x,
+                      ./images/works/works-5-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      ./images/works/works-5.webp    1x,
+                      ./images/works/works-5@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/works/works-5.jpg    1x,
+                      ./images/works/works-5@2x.jpg 2x
+                    "
+                  />
+                  <img class="pft__photo"
+                    src="#"
                     alt="Фото с коробками"
                     width="370"
                   />
+                </picture>
                   <div class="ptf__descr-cont">
                     <p class="ptf__descr">
                       Технокряк это современная площадка распространения
@@ -269,11 +500,56 @@
             <li class="ptf__item">
               <a class="link portfolio__link" href="">
                 <div class="ptf__img-cont">
-                  <img
-                    src="./images/our-works-6.jpg"
-                    alt="Фото веб-сайта"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/works-6-desktop.webp    1x,
+                        ./images/works/works-6-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/works-6-desktop.jpg    1x,
+                        ./images/works/works-6-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/works-6-tablet.webp    1x,
+                        ./images/works/works-6-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/works-6-tablet.jpg    1x,
+                        ./images/works/works-6-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-6.webp    1x,
+                        ./images/works/works-6@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-6.jpg    1x,
+                        ./images/works/works-6@2x.jpg 2x
+                      "
+                    />
+                    <img class="pft__photo"
+                      src="#"
+                      alt="Фото веб-сайта"
+                      width="370"
+                    />
+                  </picture>
                   <div class="ptf__descr-cont">
                     <p class="ptf__descr">
                       Технокряк это современная площадка распространения
@@ -292,11 +568,56 @@
             <li class="ptf__item">
               <a class="link portfolio__link" href="">
                 <div class="ptf__img-cont">
-                  <img
-                    src="./images/our-works-7.jpg"
-                    alt="Фото журнала"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/works-7-desktop.webp    1x,
+                        ./images/works/works-7-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/works-7-desktop.jpg    1x,
+                        ./images/works/works-7-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/works-7-tablet.webp    1x,
+                        ./images/works/works-7-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/works-7-tablet.jpg    1x,
+                        ./images/works/works-7-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-7.webp    1x,
+                        ./images/works/works-7@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-7.jpg    1x,
+                        ./images/works/works-7@2x.jpg 2x
+                      "
+                    />
+                    <img class="pft__photo"
+                      src="#"
+                      alt="Фото журнала"
+                      width="370"
+                    />
+                  </picture>
                   <div class="ptf__descr-cont">
                     <p class="ptf__descr">
                       Технокряк это современная площадка распространения
@@ -315,11 +636,56 @@
             <li class="ptf__item">
               <a class="link portfolio__link" href="">
                 <div class="ptf__img-cont">
-                  <img
-                    src="./images/our-works-8.jpg"
-                    alt="Фото с логотипом бирки"
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/works/works-8-desktop.webp    1x,
+                      ./images/works/works-8-desktop@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/works/works-8-desktop.jpg    1x,
+                      ./images/works/works-8-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/works/works-8-tablet.webp    1x,
+                      ./images/works/works-8-tablet@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/works/works-8-tablet.jpg    1x,
+                      ./images/works/works-8-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    srcset="
+                      ./images/works/works-8.webp    1x,
+                      ./images/works/works-8@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/works/works-8.jpg    1x,
+                      ./images/works/works-8@2x.jpg 2x
+                    "
+                  />
+                  <img class="pft__photo"
+                    src="#"
+                    alt="Фото с логотипом"
                     width="370"
                   />
+                </picture>
                   <div class="ptf__descr-cont">
                     <p class="ptf__descr">
                       Технокряк это современная площадка распространения
@@ -338,11 +704,56 @@
             <li class="ptf__item">
               <a class="link portfolio__link" href="">
                 <div class="ptf__img-cont">
-                  <img
-                    src="./images/our-works-9.jpg"
-                    alt="Фото с приложением на PC"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/works-9-desktop.webp    1x,
+                        ./images/works/works-9-desktop@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 1200px)"
+                      srcset="
+                        ./images/works/works-9-desktop.jpg    1x,
+                        ./images/works/works-9-desktop@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/works-9-tablet.webp    1x,
+                        ./images/works/works-9-tablet@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      media="(min-width: 768px)"
+                      srcset="
+                        ./images/works/works-9-tablet.jpg    1x,
+                        ./images/works/works-9-tablet@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-9.webp    1x,
+                        ./images/works/works-9@2x.webp 2x
+                      "
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/works/works-9.jpg    1x,
+                        ./images/works/works-9@2x.jpg 2x
+                      "
+                    />
+                    <img class="pft__photo"
+                      src="#"
+                      alt="Фото с приложением на PC"
+                      width="370"
+                    />
+                  </picture>
                   <div class="ptf__descr-cont">
                     <p class="ptf__descr">
                       Технокряк это современная площадка распространения
@@ -388,7 +799,7 @@
             </ul>
           </address>
         </div>
-        <div>
+        <div class="footer__social-cont">
           <p class="footer__subtitle">присоединяйтесь</p>
           <ul class="social-list list">
             <li class="social-item">
