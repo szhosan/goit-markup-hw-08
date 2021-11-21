@@ -78,6 +78,13 @@
   border-right: 1px solid #ececec;
 }
 
+.ptf__item:first-child .portfolio__link .ptf__textcont{
+  @media screen and (min-width: $tablet) and (max-width: $desktop - 1px) {
+    padding-bottom: 56px;
+  }
+  
+}
+
 .ptf__title {
   font-weight: 700;
   font-size: 18px;
